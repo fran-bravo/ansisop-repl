@@ -1,3 +1,4 @@
+import sys
 from .completer import AnsisopCompleter, AnsisopKeywords
 from .connection import Connection
 from .lexer import AnsisopLexer
@@ -27,8 +28,10 @@ class AnsisopPrompt(object):
         self.style = AnsiStyle
         self.f_body = False
         self.buffer = ""
-        self.connection = Connection("src/config.cfg")
-        self.connection.connect()
+
+        if len(sys.argv) == 1 :
+            self.connection = Connection("src/config.cfg")
+            self.connection.connect()
 
     def init_prompt(self):
         return prompt(message=self.msg,

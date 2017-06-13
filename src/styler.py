@@ -30,7 +30,7 @@ class AnsiStyle(Style):
         Comment.Preproc:    'noitalic #009999',
         Comment.Special:    'bold',
 
-        Keyword:            'bold #006699',
+        Keyword:            '#006699',
         Keyword.Pseudo:     'nobold #a241b8',
         Keyword.Type:       '#007788',
 

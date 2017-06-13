@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 from src.prompt import AnsisopPrompt
 from src.styler import AnsiStyle
 

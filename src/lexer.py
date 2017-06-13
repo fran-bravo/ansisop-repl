@@ -228,7 +228,7 @@ class AnsisopLexer(ExtendedRegexLexer):
             # Names
             (r'@@[a-zA-Z_]\w*', Name.Variable.Class),
             (r'@[a-zA-Z_]\w*', Name.Variable.Instance),
-            (r'\$\w+', Name.Variable.Global),
+            (r'\$\w+', Name.Label),
             (r'\$[!@&`\'+~=/\\,;.<>_*$?:"^-]', Name.Variable.Global),
             (r'\$-[0adFiIlpvw]', Name.Variable.Global),
             (r'::', Operator),
